@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/my-website/static/css/main.4b7fb84e.chunk.css",
+    "main.js": "/my-website/static/js/main.8e2f582a.chunk.js",
+    "main.js.map": "/my-website/static/js/main.8e2f582a.chunk.js.map",
+    "runtime-main.js": "/my-website/static/js/runtime-main.dac0fb3d.js",
+    "runtime-main.js.map": "/my-website/static/js/runtime-main.dac0fb3d.js.map",
+    "static/css/2.829c9cb5.chunk.css": "/my-website/static/css/2.829c9cb5.chunk.css",
+    "static/js/2.d280820d.chunk.js": "/my-website/static/js/2.d280820d.chunk.js",
+    "static/js/2.d280820d.chunk.js.map": "/my-website/static/js/2.d280820d.chunk.js.map",
+    "index.html": "/my-website/index.html",
+    "precache-manifest.8cba5fc14ce43dd7d4e023393d2b9648.js": "/my-website/precache-manifest.8cba5fc14ce43dd7d4e023393d2b9648.js",
+    "service-worker.js": "/my-website/service-worker.js",
+    "static/css/2.829c9cb5.chunk.css.map": "/my-website/static/css/2.829c9cb5.chunk.css.map",
+    "static/css/main.4b7fb84e.chunk.css.map": "/my-website/static/css/main.4b7fb84e.chunk.css.map",
+    "static/js/2.d280820d.chunk.js.LICENSE.txt": "/my-website/static/js/2.d280820d.chunk.js.LICENSE.txt",
+    "static/media/Prata-Regular.ttf": "/my-website/static/media/Prata-Regular.4b0afb4a.ttf",
+    "static/media/index.css": "/my-website/static/media/Ubuntu-Regular.2505bfbd.ttf",
+    "static/media/background.png": "/my-website/static/media/background.947e499b.png",
+    "static/media/backgroundSelf.png": "/my-website/static/media/backgroundSelf.42972f9c.png",
+    "static/media/self.png": "/my-website/static/media/self.7361c588.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.dac0fb3d.js",
+    "static/css/2.829c9cb5.chunk.css",
+    "static/js/2.d280820d.chunk.js",
+    "static/css/main.4b7fb84e.chunk.css",
+    "static/js/main.8e2f582a.chunk.js"
+  ]
+}
