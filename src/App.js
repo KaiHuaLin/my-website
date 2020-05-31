@@ -36,7 +36,7 @@ class App extends React.Component {
     },
     about: {
       title: 'About Me',
-      text: 'I am Kai Hua Lin, I am a student from the University of Missouri. I was born and raised in Taiwan.'
+      text: 'I am Kai Hua Lin, a junior from the University of Missouri. I was born and raised in Taiwan and started my education in the U.S since high school. I am currently working at Target Corporation as a Software Engineering Intern.'
     },
     skills: {
       title: 'Skills & Abilities',
