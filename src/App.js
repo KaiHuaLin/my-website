@@ -14,9 +14,9 @@ import EducationPge from './pages/EducationPage';
 
 class App extends React.Component {
   state = {
-    title: 'Kai Hua Linn',
+    title: 'Kai Hua Lin',
     headerLink: [
-      { title: 'Home', path: '/'},
+      { title: 'Home', path: '/my-website'},
       { title: 'About', path: '#about'},
       { title: 'Skills', path: '#skills'},
       { title: 'Experience', path: '#experience'},
