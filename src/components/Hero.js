@@ -16,7 +16,7 @@ function Hero(props){
         <Jumbotron className = 'jumbotron-fluid p-0'>
             <Container 
                 className='k-background'
-                style={{backgroundImage: `linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.5)), url(${backgroundSelf})`}}
+                style={{backgroundImage: `linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(${backgroundSelf})`}}
             >
                 <Row className = 'justify-content-start py-4'>
                     <Col className='text-center mt-5' md = {6} sm = {12} xs = {12}>
