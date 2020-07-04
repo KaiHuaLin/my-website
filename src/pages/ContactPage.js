@@ -4,7 +4,7 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
-import Email from '../components/Email'
+// import Email from '../components/Email'
 
 
 const styles = {

@@ -15,7 +15,6 @@ const styles = {
         fontFamily: 'Prata'
     },
     scrollDiv: {
-        fontFamily: 'Prata',
         backgroundImage: `linear-gradient(rgba(0,0,0,0.8),rgba(119,130,117,0.8)), url(${background})`,
         height: '530px',
         overflow: 'scroll',
