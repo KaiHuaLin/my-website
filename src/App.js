@@ -214,7 +214,7 @@ export default App;
   do git init
   create github repo, git remote add origin <repo url>
   git push -u origin master
-  npm run deploy
+  sudo npm run deploy
 
 
 
