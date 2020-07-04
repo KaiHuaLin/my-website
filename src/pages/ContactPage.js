@@ -22,7 +22,8 @@ const styles = {
         color: 'white'
     },
     section: {
-        marginTop: '40px'
+        marginTop: '40px',
+        // textDecoration: 'none'
     },
     infoDiv: {
         margin: '20px 0'
@@ -42,7 +43,7 @@ function ContactPage(props){
                             <h1 style={styles.title}>Contact</h1>
                             <div style={styles.section}>
                                 <h4>Email</h4>
-                                <p>{props.email}</p>
+                                <p><a style={{textDecoration: 'none', color: 'inherit'}} href={"mailto:" + props.email}>{props.email}</a></p>
                             </div>
                             <div style={styles.section}>
                                 <h4>Phone</h4>
