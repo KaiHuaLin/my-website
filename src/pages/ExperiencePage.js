@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Jumbotron from 'react-bootstrap/Jumbotron'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
+
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 import BreakLine from '../components/BreakLine';
 
@@ -68,11 +71,14 @@ const styles = {
 }
 
 function ExperiencePage(props){
+    useEffect(() => {
+        AOS.init()
+    }, [])
 
     return(
         <Jumbotron className='jumbotron-fluid bg-transparent'>
             <Container style={styles.container}>
-                <Row className='justify-content-center'>
+                <Row className='justify-content-center' data-aos="fade-right">
                     <div
                         style={styles.title}
                     >
@@ -80,14 +86,14 @@ function ExperiencePage(props){
                         <BreakLine color='black' />
                     </div>
                 </Row>
-                <div className='k-background' style={styles.scrollDiv}>
+                <div className='k-background' style={styles.scrollDiv} data-aos="zoom-in-up">
                     <Row className='align-items-center h-100'>
                         <Col>
                             <div style={styles.contentDiv1}>
                                 <Row>
                                     {
                                         props.experience.experiencesUpRow.map(experience => (
-                                            <Col style={styles.eachExp} md={2} sm={2} xs={2}>
+                                            <Col style={styles.eachExp} md={2} sm={2} xs={2} data-aos="fade-left">
                                                 <p style={styles.contentHeader}>{ experience.header }</p>
                                                 <p style={styles.contentCompany}>{ experience.company }</p>
                                                 <p style={styles.contentPosTitle}>{ experience.position }</p>
@@ -104,7 +110,7 @@ function ExperiencePage(props){
                                 <Row className='justify-content-center'>
                                     {
                                         props.experience.experiencesDownRow.map(experience => (
-                                            <Col style={styles.eachExp} md={2} sm={2} xs={2}>
+                                            <Col style={styles.eachExp} md={2} sm={2} xs={2} data-aos="fade-right">
                                                 <p style={styles.contentHeader}>{ experience.header }</p>
                                                 <p style={styles.contentCompany}>{ experience.company }</p>
                                                 <p style={styles.contentPosTitle}>{ experience.position }</p>

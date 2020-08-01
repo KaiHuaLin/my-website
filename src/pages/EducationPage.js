@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Jumbotron from 'react-bootstrap/Jumbotron'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
+
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 import BreakLine from '../components/BreakLine';
 
@@ -28,9 +31,13 @@ const styles = {
 }
 
 function EducationPge(props){
+    useEffect(() => {
+        AOS.init()
+    }, [])
+
     return (
         <Jumbotron className='jumbotron-fluid' style={styles.container}>
-            <Container>
+            <Container data-aos="fade-right">
                 <Row className='justify-content-center'>
                     <div 
                         style={styles.title}

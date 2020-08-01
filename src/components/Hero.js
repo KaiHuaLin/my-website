@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Jumbotron from 'react-bootstrap/Jumbotron'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
@@ -6,15 +6,23 @@ import Col from 'react-bootstrap/Col'
 import {FaGithub, FaLinkedin, FaInstagramSquare} from 'react-icons/fa'
 import {MdKeyboardArrowDown} from 'react-icons/md';
 
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
 import BreakLine from '../components/BreakLine'
 
 import backgroundSelf from '../assets/images/backgroundSelf.png'
 
 
 function Hero(props){
+    useEffect(() => {
+        AOS.init()
+    }, [])
+
     return(
         <Jumbotron className = 'jumbotron-fluid p-0'>
             <Container 
+                data-aos="fade-right"
                 className='k-background'
                 style={{backgroundImage: `linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(${backgroundSelf})`}}
             >

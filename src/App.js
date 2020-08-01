@@ -71,7 +71,7 @@ class App extends React.Component {
           header: '2020 - Present',
           company: 'Target',
           position: 'Software Engineering Intern',
-          text: 'TBD'
+          text: 'Contributed and updated the highest priority features for Target open source on-call scheduling application, GoAlert, using ReactJS for frontend and Golang for backend development.'
         },
         {
           header: 'Summer 2019',

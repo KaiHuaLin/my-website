@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Jumbotron from 'react-bootstrap/Jumbotron'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
+
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 import BreakLine from '../components/BreakLine';
 
@@ -36,10 +39,15 @@ const styles = {
 }
 
 function SkillsPage(props){
+    useEffect(() => {
+        AOS.init()
+    }, [])
+
+
     return (
         <Jumbotron className='jumbotron-fluid' style={styles.container}>
             <Container>
-                <Row className='justify-content-center'>
+                <Row className='justify-content-center' data-aos="fade-right">
                     <div 
                         style={styles.title}
                     >
@@ -47,7 +55,7 @@ function SkillsPage(props){
                         <BreakLine color='black'/>
                     </div>
                 </Row>
-                <Row className='justify-content-around'>
+                <Row className='justify-content-around' data-aos="fade-up">
                     <div style={styles.category}>
                         <Col>
                             <h4 style={styles.subtitle}>

@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Jumbotron from 'react-bootstrap/Jumbotron'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
-// import Email from '../components/Email'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 
 const styles = {
@@ -34,9 +35,13 @@ const styles = {
 }
 
 function ContactPage(props){
+    useEffect(() => {
+        AOS.init()
+    }, [])
+
     return(
         <Jumbotron className='jumbotron-fluid bg-transparent' style={styles.container}>
-            <Container>
+            <Container data-aos="flip-up">
                 <Row className='justify-content-around' style={styles.card}>
                     <div style={styles.infoDiv}>
                         <Col>
